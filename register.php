@@ -48,7 +48,7 @@ if (x==null || x=="" )
 <div style="padding-left:420px;padding-top:100px">
 <table style="background-image:url(images/back_4.jpg)" width="50%">
 <tr>
-<td style="background-image:url(images/browse.jpg)"><b> Username </b> </td>
+<td style="background-image:url(images/browse.jpg)" class='style3'><b> Username </b> </td>
 <td><input type="text" name="Username" id="Username"/></td>
 </tr>
 <tr>

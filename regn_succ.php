@@ -25,3 +25,4 @@ echo "Successfully Registered!";
 
 mysql_close($con);
 ?>
+</html>

@@ -86,7 +86,7 @@ if(isset($_POST['Update']))
 
 include "Query.class";
 $query_update = new  Query();
-$query_update->update("UPDATE OrderInProcess SET Status='$_POST[stadisplay]' where Sno='$_POST[refdisplay]' ");
+$query_update->update("UPDATE orderinprocess SET Status='$_POST[stadisplay]' where Sno='$_POST[refdisplay]' ");
 }
 else
 {
@@ -94,7 +94,7 @@ if(isset($_POST['Check']))
 {
 include "Query.class";
 $query_check= new Query();
-$query_check->ViewCheck("select * from OrderInProcess where Sno=$_POST[ref]");
+$query_check->ViewCheck("select * from orderinprocess where Sno=$_POST[ref]");
 
 }
 

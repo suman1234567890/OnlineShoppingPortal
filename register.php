@@ -44,6 +44,8 @@ if (x==null || x=="" )
 </head>
 <body>
 <?php include("header.php")?>
+<?php include("menu.php")?>
+
 <form name="regn" onSubmit="return validate();" action="regn_succ.php" method="post">
 <div style="padding-left:420px;padding-top:100px">
 <table style="background-image:url(images/back_4.jpg)" width="50%">

@@ -6,19 +6,19 @@
 <script type="text/javascript">
 function validate()
 {
-var x=document.forms["regn"]["username"].value
+var x=document.forms["regn"]["Username"].value
 if (x==null || x=="")
   {
   alert("First name must be filled out");
   return false;
   }
-x=document.forms["regn"]["password"].value
+x=document.forms["regn"]["Userpass"].value
 if (x==null || x=="" || x.length<4)
   {
   alert("Password should be atleast 4 Letters");
   return false;
   }
-x=document.forms["regn"]["mail"].value
+x=document.forms["regn"]["Email"].value
 var atpos=x.indexOf("@");
 var dotpos=x.lastIndexOf(".");
 if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)

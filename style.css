@@ -1,0 +1,50 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #3a3d3d;
+}
+.style1 {
+	color: #b2aea9;
+	font-size: 10px;
+	font-family: tahoma;
+	text-decoration:none;
+	font-weight:normal
+}
+.style2 {
+	color: #fad5d9;
+	font-size: 10px;
+	font-family: tahoma;
+}
+.style3 {
+	color: #FFFFFF;
+	font-size: 11px;
+	font-family: tahoma;
+	font-weight: bold;
+	text-decoration:none
+}
+.style4 {
+	color: #FFFFFF;
+	font-size: 13px;
+	font-family: "Comic Sans MS", cursive;
+	text-decoration:none
+
+}
+.style5 {
+	color: #FFE42F;
+	font-size: 16px;
+	font-family: tahoma;
+}
+.style6 {
+	color: #FFE42F;
+	font-size: 10px;
+	font-family: tahoma;
+}
+.style7 {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: tahoma;
+	font-weight: bold;
+	text-decoration:none
+}

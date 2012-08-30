@@ -1,0 +1,132 @@
+<?php
+class Query{
+
+ function delete($s)
+{
+include"connect.class";
+$con1= new connect();
+$con1=$con1->constring();
+
+mysql_query($s);
+echo "<br>Record deleted";
+mysql_close($con1);
+}
+
+function insert($sql)
+{
+include "connect.class";
+$con1= new connect();
+$con1=$con1->constring();
+
+if (!mysql_query($sql,$con1))
+    die('Error: ' . mysql_error());
+else 
+  echo "1 record suceesfully added";
+
+mysql_close($con1);
+
+}
+
+function insertref($sql)
+{
+include "connect.class";
+$con1= new connect();
+$con1=$con1->constring();
+
+if (!mysql_query($sql,$con1))
+    die('Error: ' . mysql_error());
+else 
+  echo "1 record suceesfully added";
+
+mysql_close($con1);
+
+}
+function update($s)
+{
+include"connect.class";
+$con1= new connect();
+$con1=$con1->constring();
+
+mysql_query($s); 
+echo "<br>Record suceesfully updated";
+mysql_close($con1);
+}
+
+function ViewCheck($s)
+{
+
+include"connect.class";
+$con1= new connect();
+$con1=$con1->constring();
+
+$result = mysql_query($s);
+
+echo '<table >';
+while($row = mysql_fetch_array($result))
+  {
+  echo '<tr>';
+  echo '<td align="right"><h2>RefNo:  </td><td>'.'<h2>'.  $row['Sno']     .'</td>' ;
+  //echo '</tr><tr>';
+echo '<td></td><td></td>';
+  echo '<td align="right"><h2>Status: </td><td>'.'<h2>'.  $row['Status'] . '&nbsp</td>' ;
+echo '</tr>';
+   }
+echo "</table>";
+mysql_close($con1);
+}
+
+
+function viewnews($s)
+{
+
+include"connect.class";
+$con1= new connect();
+$con1=$con1->constring();
+
+$result = mysql_query($s);
+
+while($row = mysql_fetch_array($result))
+  {
+  echo "<br> -------------------------------------------------------------------------------------------------------------------------------------------------<br>";
+  echo "Serial No:" .  $row['SNo'] ;
+  echo "<br />";
+  echo "<br />";
+  echo $row['Date'] ;
+  echo "<br />";
+   echo "<br />";
+   echo $row['News'] ;
+  echo "<br />";
+  }
+mysql_close($con1);
+}
+
+function viewarticle($s)
+{
+
+$con = mysql_connect("127.0.0.1","root","");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+
+mysql_select_db("jobportal", $con);
+
+$result = mysql_query($s);
+while($row = mysql_fetch_array($result))
+  {
+  echo "<br> -------------------------------------------------------------------------------------------------------------------------------------------------<br>";
+  echo "Serial No:" .  $row['SNo'] ;
+  echo "<br />";
+  echo "<br />";
+  echo $row['Head'] ;
+  echo "<br />";
+   echo "<br />";
+   echo $row['Body'] ;
+  echo "<br />";
+  
+  }
+
+mysql_close($con);
+}
+}
+?>

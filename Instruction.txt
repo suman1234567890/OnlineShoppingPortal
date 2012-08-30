@@ -1,0 +1,29 @@
+30/08/2011
+
+Start with the login part
+  Work on javascript
+  Check login for add to cart option
+  Logout work successfully with destroying session
+
+31/08/2011
+ Clothes + Mobile Phone page working
+ Every page must be working
+ Try to work on CLICK ON CART
+
+01/09/2011
+ Remove link must work
+ BuyNow button will generate a refernce number and refernce number will b added with ORdered as status
+
+02/09/2011
+ Checking as per my knowledge
+
+
+INSTRUCTION:
+
+1) Admin username:Admin
+             password:password
+
+2)New User page is nt desgined nd coding nt done just got clicked in my mind nw(11.45PM 02-09-2011)
+3) User username:user
+              password:user
+4)Sending also database for further clarification

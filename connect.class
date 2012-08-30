@@ -1,0 +1,24 @@
+<?php
+
+class connect
+{
+
+var $con;
+function constring()
+{
+
+$con=mysql_connect("localhost","root","");
+if(!$con)
+{
+die('Error'.mysql_error);
+}
+mysql_select_db("Tcs_ShoppingPortal",$con);
+return $con;
+}
+
+
+}
+
+
+
+?>

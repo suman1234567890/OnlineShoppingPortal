@@ -80,7 +80,7 @@ echo '<div style="padding-left:500px;padding-top:10px"><b> Invalid Username and 
 <td><input type="password" name="Usercpass" id="Usercpass" /></td>
 </tr>
 <tr><td></td><td> <input type="Submit" value="Login" name="UserLogin" onClick="return BlankCheck();"/> </td>
-<td style="background-image:url(images/browse.jpg)" ><a href="" class="style3"> New User? </a></td>
+<td style="background-image:url(images/browse.jpg)" ><a href="register.php" class="style3"> New User? </a></td>
 </tr>
 </table>
 </div>

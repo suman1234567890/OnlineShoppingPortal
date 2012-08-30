@@ -5,6 +5,7 @@
 </style>
 </head>
 <body>
+<input type='button' value='Back' onclick="document.location.href='Login.php'"/>
 </body>
 <?php
 include "connect.class";

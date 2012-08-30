@@ -25,7 +25,7 @@ if($_GET)
 		include "connect.class";
 $con1= new connect();
 $con1=$con1->constring();
-$sql="Insert into OrderInProcess(Sno,Status) values ('','Ordered')";
+$sql="Insert into orderinprocess(Sno,Status) values ('','Ordered')";
 
 if (!mysql_query($sql,$con1))
     die('Error: ' . mysql_error());
